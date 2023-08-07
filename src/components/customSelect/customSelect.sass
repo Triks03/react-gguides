@@ -1,0 +1,110 @@
+.custom-select
+    &__modal, &__overlay
+        width: 100wh
+        height: 100vh
+        top: 0
+        right: 0
+        left: 0
+        bottom: 0
+        position: fixed
+    &__overlay
+        background: rgba(49, 49, 49, 0.8)
+    &__button
+        position: absolute
+        right: .3rem
+        top: .3rem
+        background-color: transparent
+        width: 5rem
+        height: 5rem
+        transition: .3s all
+        &:hover
+            transform: scale(1.1)
+            transition: .3s all
+    &__close-icon *
+        fill: rgb(230, 230, 221)
+    &__modal-content
+        position: absolute
+        overflow: hidden
+        border-radius: 2rem
+        top: 40%
+        left: 35%
+        width: 55rem
+        height: 30rem
+        background-color: #181717dd
+    &__modal-header
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 100%
+        height: 5rem
+        text-align: center
+    &__title
+        color: rgb(230, 230, 221)
+        font-size: 2.5rem
+    &__body
+        padding-top: 2rem
+        margin: 0 auto
+        width: 70%
+        height: 20rem
+        display: flex
+        gap: 2rem
+        align-items: center
+        justify-content: center
+        flex-wrap: wrap
+    &__element-icon
+        transition: .3s all
+    &__element-button
+        background-color: #181717dd
+        border-radius: 2rem
+        width: 7rem
+        height: 7rem
+        transition: .3s all
+        &:nth-child(1)
+            &:hover
+                background-color: #53BF9D
+                transition: .3s all
+                .custom-select__element-icon *
+                    fill: #181717dd
+                    transition: .3s all
+        &:nth-child(2)
+            &:hover
+                background-color: #E6B325
+                transition: .3s all
+                .custom-select__element-icon *
+                    fill: #181717dd
+                    transition: .3s all
+        &:nth-child(3)
+            &:hover
+                background-color: #6F1AB6
+                transition: .3s all
+                .custom-select__element-icon *
+                    fill: #181717dd
+                    transition: .3s all
+        &:nth-child(4)
+            &:hover
+                background-color: #5F8D4E
+                transition: .3s all
+                .custom-select__element-icon *
+                    fill: #181717dd
+                    transition: .3s all
+        &:nth-child(5)
+            &:hover
+                background-color: #0081C9
+                transition: .3s all
+                .custom-select__element-icon *
+                    fill: #181717dd
+                    transition: .3s all
+        &:nth-child(6)
+            &:hover
+                background-color: #850000
+                transition: .3s all
+                .custom-select__element-icon *
+                    fill: #181717dd
+                    transition: .3s all
+        &:nth-child(7)
+            &:hover
+                background-color: #AEE2FF
+                transition: .3s all
+                .custom-select__element-icon *
+                    fill: #181717dd
+                    transition: .3s all

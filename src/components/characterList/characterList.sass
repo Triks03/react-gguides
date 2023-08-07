@@ -1,0 +1,133 @@
+.character-list
+    &__wrapper
+        width: 100%
+        height: 100%
+    &__list
+        list-style: none
+        display: flex
+        flex-wrap: wrap
+        gap: 3rem
+        justify-content: center
+        padding: 2.5rem 0rem 2.5rem 0rem
+    &__item
+        position: relative
+        width: 30rem
+        height: 38rem
+        overflow: hidden
+        &:hover > .character-list__title-wrapper
+            transform: translateY(-5.7rem)
+            transition: .5s all
+        &:active > .character-list__title-wrapper
+            transform: translateY(-5.7rem)
+            transition: .5s all
+        &:focus > .character-list__title-wrapper
+            transform: translateY(-5.7rem)
+            transition: .5s all
+    &__link
+        font-size: 2rem
+        text-decoration: none
+        color: black
+    &__image-wrapper
+        width: 100%
+        height: 100%
+    &__image
+        width: 100%
+        height: 100%
+    &__title-wrapper
+        position: absolute
+        transform: translateY(0)
+        transition: .5s all
+        display: flex
+        background-color: #181717dd
+        width: 100%
+        height: 15%
+        z-index: 3
+        justify-content: space-between
+        align-items: center
+        cursor: pointer
+    &__title
+        font-size: 3rem
+        text-align: center
+        color: rgb(230, 230, 221)
+        transition: .3s all
+        user-select: none
+        &:hover
+            transform: scale(1.03)
+            transition: .3s all
+    &__image-decoration
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0rem
+        background-color: #434242
+        z-index: 3
+        opacity: .4
+        transition: .3s all
+        &_error
+            background-color: #850000
+            transition: .3s all
+        &_anemo
+            background-color: #53BF9D
+            transition: .3s all
+        &_geo
+            background-color: #E6B325
+            transition: .3s all
+        &_electro
+            background-color: #6F1AB6
+            transition: .3s all
+        &_dendro
+            background-color: #5F8D4E
+            transition: .3s all
+        &_hydro
+            background-color: #0081C9
+            transition: .3s all
+        &_pyro
+            background-color: #DC0000
+            transition: .3s all
+        &_cryo
+            background-color: #AEE2FF
+            transition: .3s all
+        &:hover + .preview__image
+            transform: scale(1.03)
+            transition: .3s all
+    &__element-block
+        position: absolute
+        top: 2rem
+        right: 2rem
+        width: 5rem
+        height: 5rem
+        display: flex
+        justify-content: center
+        align-items: center
+        z-index: 10
+        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+    &__link
+        width: 5rem
+        height: 100%
+    &__button
+        width: 5rem
+        height: 100%
+        border: none
+        background-color: transparent
+        transition: .3s all
+        cursor: pointer
+        &:first-child
+            &:hover
+                background-color: #dc0000de
+                transition: .3s all
+                > .character-list__button_delete * 
+                    fill: #181717dd
+        &:last-child
+            &:hover
+                background-color: #e6b325de
+                transition: .3s all
+                > .character-list__button_update * 
+                    fill: #181717dd
+        &:nth-child(2)
+            width: 15rem
+        &_delete *
+            fill: #DC0000
+        &_update *
+            fill: #E6B325
+
+
